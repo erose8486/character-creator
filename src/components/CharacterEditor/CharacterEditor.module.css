@@ -4,6 +4,7 @@
 }
 
 .maxWidthWrapper {
+  position: relative;
 }
 
 .header {
@@ -34,7 +35,6 @@
 
 .controlColumn {
   width:50%;
-  position: relative;
 }
 .perspective{
   position: fixed;
@@ -42,4 +42,32 @@
   width: 100%;
   height: 40%;
   background-color: hsl(195deg, 20%, 86%);
+}
+@media screen and (max-width: 430px) {
+  .characterEditor {
+    padding-top: 8px;
+    padding-bottom: 16px;
+  }
+  .header{
+    width:100%;
+  }
+  .description{
+    visibility: hidden;
+  }
+  .characterWrapper{
+    left: 25px;
+    bottom: 0;
+    top: auto;
+    height:80vh;
+  }
+  .controlColumn{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 10%;
+    display: flex;
+    gap: 20px;
+    z-index: 1;
+    overflow: auto;
+  }
 }

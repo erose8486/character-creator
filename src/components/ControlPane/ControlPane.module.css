@@ -26,3 +26,8 @@
   font-weight: 400;
   color: hsl(0deg, 0%, 30%);
 }
+@media screen and (max-width: 430px){
+  .controlPane{
+    min-width:80vw;
+  }
+}

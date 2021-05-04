@@ -8,3 +8,8 @@
 a.footerLink{
   color:white;
 }
+@media screen and (max-width: 430px){
+  .footer{
+    display: none;
+  }
+}
